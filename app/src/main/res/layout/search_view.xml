@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <com.ks.widget.edittextwithdelete.DelEditText
+        android:id="@+id/search_et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/search_edittext_shape"
+        android:drawableLeft="@mipmap/search_icon"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/edit_text_del_icon_delete_gray"
+        android:hint="请输入关键字"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/search_lv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/lv_search_tips_bg"
+        android:visibility="gone" />
+</LinearLayout>
